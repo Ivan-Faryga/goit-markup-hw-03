@@ -63,11 +63,12 @@ nav-list-link:hover {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+  text-align: center;
 }
 /*===========HEADER============*/
 
 .header-section {
-  padding: 25px 0;
+  padding: 25px 15px;
   display: flex;
   align-items: center;
 }
@@ -164,7 +165,9 @@ nav-list-link:hover {
 /*==============HERO==============*/
 
 .hero-section {
-  padding: 200px 0;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -188,13 +191,11 @@ nav-list-link:hover {
   border-radius: 4px;
   border: none;
   cursor: pointer;
-  position: absolute;
-  left: 1040px;
-  top: 430px;
 }
 
 .hero-btn:active {
   background: #188ce8;
+  border: none;
 }
 
 .active {
@@ -224,9 +225,29 @@ nav-list-link:hover {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--section-header-color);
+  padding-bottom: 50px;
 }
 
 /*============OUR ADVANTAGES SECTION============*/
+
+.our-advantages-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.our-advantages-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-advantages-list > li:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-advantages-list-item {
+  width: 270px;
+}
+
 .list-advantages-header {
   font-family: var(--main-font);
   font-style: normal;
@@ -236,6 +257,7 @@ nav-list-link:hover {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--section-header-color);
+  padding-bottom: 10px;
 }
 
 .list-advantages-text {
@@ -249,10 +271,53 @@ nav-list-link:hover {
 }
 /*============END OUR ADVANTAGES SECTION============*/
 
+/* ====================OUR SERVICES================ */
+.our-services {
+  padding-bottom: 94px;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-list > li:not(:last-child) {
+  margin-right: 30px;
+}
+/* ================END OUR SERVICES================ */
+
 /*=================OUR TEAM===================*/
+
+.stuff-container {
+  padding: 94px 0;
+}
+
+.stuff-list {
+  display: flex;
+}
 
 .our-stuff {
   background-color: var(--background-grey);
+}
+
+.stuff-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.stuff-list-item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.img-description {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.img-description-header {
+  padding-bottom: 10px;
 }
 
 .stuff-initials {
@@ -282,6 +347,19 @@ nav-list-link:hover {
 /*=================END OUR TEAM===================*/
 
 /*=====================FOOTER=====================*/
+
+.footer-container {
+  padding: 60px 15px;
+  text-align: left;
+}
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.address > li:not(:last-child) {
+  margin-bottom: 9px;
+}
 
 .adress-link-location {
   font-family: var(--main-font);
@@ -314,6 +392,13 @@ nav-list-link:hover {
 
 /*=================PORTFOLIO PAGE=================*/
 
+.radio-btn-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
 .radio-btn {
   font-family: inherit;
   font-weight: 500;
@@ -325,6 +410,11 @@ nav-list-link:hover {
   background: #f5f4fa;
   border-radius: 4px;
   cursor: pointer;
+  padding: 6px 22px;
+}
+
+.radio-btn-list > li:not(:last-child) {
+  margin-right: 8px;
 }
 
 .radio-btn:hover,
