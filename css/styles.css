@@ -29,6 +29,7 @@ ol {
 
 img {
   display: block;
+  min-width: 100%;
 }
 
 .list {
@@ -402,6 +403,21 @@ nav-list-link:hover {
   justify-content: center;
   margin-top: 94px;
   margin-bottom: 50px;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+  outline: 1px solid tomato;
+}
+
+.project-list-item {
+  flex-basis: calc(100% / 3 - 30);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  outline: 1px solid teal;
 }
 
 .radio-btn {
