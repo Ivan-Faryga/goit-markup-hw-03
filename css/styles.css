@@ -73,9 +73,13 @@ nav-list-link:hover {
 }
 
 /*===========HEADER============*/
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 
 .header-section {
-  padding: 25px 15px;
+  /* padding: 25px 15px; */
   display: flex;
   align-items: center;
 }
@@ -172,10 +176,8 @@ nav-list-link:hover {
 /*==============HERO==============*/
 
 .hero-section {
-  align-items: center;
-  /* padding-top: 200px;
-  padding-bottom: 200px; */
-  padding: 200px 250px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -187,7 +189,8 @@ nav-list-link:hover {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 30px;
+  width: 696px;
+  margin: 0 auto 30px;
 }
 .hero-btn {
   min-width: 200px;
@@ -233,7 +236,7 @@ nav-list-link:hover {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--section-header-color);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /*============OUR ADVANTAGES SECTION============*/
@@ -299,14 +302,6 @@ nav-list-link:hover {
 /* ================END OUR SERVICES================ */
 
 /*=================OUR TEAM===================*/
-.our-stuff {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-/* .stuff-container {
-  padding: 94px 0;
-} */
 
 .stuff-list {
   display: flex;
@@ -365,7 +360,12 @@ nav-list-link:hover {
 /*=====================FOOTER=====================*/
 
 .footer-container {
-  padding: 60px 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  /* text-align: left; */
+}
+
+.footer-content-placing {
   text-align: left;
 }
 
@@ -422,14 +422,14 @@ nav-list-link:hover {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
+  margin-left: -30px;
   margin-bottom: -30px;
   /* outline: 1px solid tomato; */
 }
 
 .project-list-item {
   flex-basis: calc(100% / 3 - 30);
-  margin-right: 30px;
+  margin-left: 30px;
   margin-bottom: 30px;
   /* outline: 1px solid teal; */
 }
@@ -487,5 +487,6 @@ nav-list-link:hover {
   padding: 20px 24px;
   text-align: left;
   border: 1px solid #eeeeee;
+  border-top: none;
 }
 /*===============END PORTFOLIO PAGE================*/
